@@ -432,7 +432,7 @@ p {
   /* REPLACE: swap for actual logo */
   width: 48px;
   height: 48px;
-  background-color: var(--color-teal);
+
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1234,9 +1234,11 @@ p {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 4/3;
-  /* REPLACE: background-image: url('../images/location-aerial.jpg') */
+  background-image: url('../images/IMG_0888.webp');
+  background-size: cover;
+  background-position: center; /* Centers the image to crop edges evenly */
+  background-repeat: no-repeat;
   background-color: var(--color-sage-light);
-  background-image: linear-gradient(135deg, #c6c5d4 0%, #8b8a9e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1643,7 +1645,7 @@ p {
   /* REPLACE: swap for actual logo (light version) */
   width: 40px;
   height: 40px;
-  background-color: var(--color-teal);
+  
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
