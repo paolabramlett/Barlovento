@@ -37,7 +37,7 @@
   --color-sand-mid:    #e8d9c8;
   --color-sand-dark:   #c4a882;
   --color-sage:        #8a9e8c;
-  --color-sage-light:  #c5d4c6;
+  --color-sage-light:  #afbee6;
   --color-teal:        #0171BC;
   --color-teal-dark:   #015493;
   --color-teal-light:  #3395d4;
@@ -659,7 +659,7 @@ p {
   background-image: linear-gradient(180deg, #013d6e 0%, #0171BC 60%, #3395d4 100%);
   /* Placeholder pattern to suggest imagery */
   background-image:
-    linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.6) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.6) 100%),
     linear-gradient(180deg, #013d6e 0%, #0171BC 60%, #3395d4 100%);
   z-index: 0;
 }
@@ -683,9 +683,9 @@ p {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(20, 45, 44, 0.5) 0%,
-    rgba(20, 45, 44, 0.3) 50%,
-    rgba(10, 25, 25, 0.65) 100%
+    rgba(1, 2, 32, 0.65) 0%,
+    rgba(1, 4, 29, 0.5) 50%,
+    rgba(1, 6, 27, 0.75) 100%
   );
   z-index: 1;
 }
