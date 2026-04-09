@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "name": "Hotel Barlovento",
     "description": "Hotel tranquilo con alberca y jardines en Puerto Escondido, Oaxaca. Ideal para parejas, familias y viajeros que buscan descanso real cerca de las playas.",
     "url": "https://www.hotel-barlovento.com/index.html",
-    "telephone": "+529545820220",
+    "telephone": ["+529545820220", "+529545820101"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sexta Sur 3, Sector Hidalgo",
@@ -85,13 +85,166 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       { "@type": "LocationFeatureSpecification", "name": "WiFi Starlink", "value": true }
     ],
     "priceRange": "$$",
-    "image": "REEMPLAZAR con URL de imagen real",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "834",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "image": "https://www.hotel-barlovento.com/images/IMG_6527.webp",
     "sameAs": [
       "https://maps.app.goo.gl/QgcjeiB75r9VHrbLA",
       "https://www.facebook.com/hotelbarloventomx",
       "https://www.instagram.com/hotel.barlovento/"
     ]
   }
+  </script>
+
+  <!-- FAQPage schema — mejora visibilidad en resultados de búsqueda con preguntas frecuentes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta una noche en Hotel Barlovento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los precios por noche son: 1 persona $1,800 MXN, 2 personas $2,000 MXN, 3 personas $2,200 MXN, 4 personas $2,400 MXN, 5 personas $2,600 MXN, 6 personas $2,800 MXN. Todas las habitaciones incluyen aire acondicionado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El desayuno está incluido en el precio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El desayuno no está incluido en la tarifa de la habitación. Sin embargo, el hotel cuenta con un restaurante de desayunos propio, considerado uno de los mejores de Puerto Escondido. Los huéspedes pueden desayunar sin salir del hotel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tan lejos están las playas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las playas principales de Puerto Escondido —Zicatela, Carrizalillo y Playa Principal— están a entre 5 y 10 minutos en auto o taxi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El WiFi es bueno? ¿Puedo trabajar de forma remota?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Hotel Barlovento utiliza internet Starlink, que ofrece la conexión más rápida y estable disponible en Puerto Escondido. Es adecuada para videollamadas, trabajo remoto y streaming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El hotel es seguro para mujeres viajando solas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El hotel tiene acceso controlado y atención 24 horas. Es una opción popular para mujeres viajando solas y para viajeros LGBT+, que buscan un ambiente tranquilo y respetuoso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Aceptan familias con niños?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El hotel cuenta con área de alberca ideal para familias y habitaciones con capacidad para hasta 6 personas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo hago una reservación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes reservar por WhatsApp o llamando al +52 954 582 0220 o +52 954 582 0101. El hotel tiene atención las 24 horas, los 7 días de la semana."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen estacionamiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, el hotel cuenta con estacionamiento. Para confirmar disponibilidad según la fecha de tu estancia, contacta directamente al +52 954 582 0220."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Service schema — una entrada por tipo de habitación -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 1 persona",
+      "description": "Habitación con aire acondicionado para 1 persona en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "1800", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1800", "priceCurrency": "MXN", "unitText": "noche" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 2 personas",
+      "description": "Habitación con aire acondicionado para 2 personas en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2000", "priceCurrency": "MXN", "unitText": "noche" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 3 personas",
+      "description": "Habitación con aire acondicionado para 3 personas en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2200", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2200", "priceCurrency": "MXN", "unitText": "noche" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 4 personas",
+      "description": "Habitación con aire acondicionado para 4 personas en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2400", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2400", "priceCurrency": "MXN", "unitText": "noche" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 5 personas",
+      "description": "Habitación con aire acondicionado para 5 personas en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2600", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2600", "priceCurrency": "MXN", "unitText": "noche" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Alojamiento",
+      "name": "Habitación con A/C para 6 personas",
+      "description": "Habitación con aire acondicionado para 6 personas en Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2800", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2800", "priceCurrency": "MXN", "unitText": "noche" } }
+    }
+  ]
   </script>
 </head>
 

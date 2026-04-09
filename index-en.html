@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     "name": "Hotel Barlovento",
     "description": "A peaceful hotel with pool and gardens in Puerto Escondido, Oaxaca. Ideal for couples, families, and travelers who want genuine rest close to the beach.",
     "url": "https://www.hotel-barlovento.com/index-en.html",
-    "telephone": "+529545820220",
+    "telephone": ["+529545820220", "+529545820101"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sexta Sur 3, Sector Hidalgo",
@@ -85,6 +85,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       { "@type": "LocationFeatureSpecification", "name": "Starlink WiFi", "value": true }
     ],
     "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "834",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
     "image": "https://cdn.prod.website-files.com/681a2b2db5d5230b1bfd3bb2/6824e8f28557c09b451c763d_IMG_8824.webp",
     "sameAs": [
       "https://maps.app.goo.gl/QgcjeiB75r9VHrbLA",
@@ -93,10 +106,150 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ]
   }
   </script>
+
+  <!-- FAQPage schema — improves visibility in search results with FAQ rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a night at Hotel Barlovento cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nightly rates are: 1 person $1,800 MXN, 2 people $2,000 MXN, 3 people $2,200 MXN, 4 people $2,400 MXN, 5 people $2,600 MXN, 6 people $2,800 MXN. All rooms include air conditioning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is breakfast included?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Breakfast is not included in the room rate. However, the hotel has its own on-site breakfast restaurant, considered one of the best in Puerto Escondido. Guests can eat without leaving the property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is the beach from Hotel Barlovento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main beaches in Puerto Escondido — Zicatela, Carrizalillo, and Playa Principal — are 5 to 10 minutes away by car or taxi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Wi-Fi fast enough to work remotely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Hotel Barlovento uses Starlink satellite internet, providing the fastest and most reliable connection available in Puerto Escondido. It is suitable for video calls, remote work, and streaming."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Hotel Barlovento safe for solo female travelers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The hotel has controlled access and 24-hour staff. It is a popular choice among solo women travelers and LGBT+ guests looking for a calm, respectful environment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the hotel family-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The hotel has a pool area ideal for families and rooms that accommodate up to 6 people."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a reservation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can book via WhatsApp or by calling +52 954 582 0220 or +52 954 582 0101. The hotel has 24-hour, 7-day-a-week reception."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there parking at Hotel Barlovento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the hotel has parking available. Contact +52 954 582 0220 directly to confirm availability for your stay dates."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Service schema — one entry per room type -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 1 person",
+      "description": "Air-conditioned room for 1 person at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "1800", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1800", "priceCurrency": "MXN", "unitText": "night" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 2 people",
+      "description": "Air-conditioned room for 2 people at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2000", "priceCurrency": "MXN", "unitText": "night" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 3 people",
+      "description": "Air-conditioned room for 3 people at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2200", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2200", "priceCurrency": "MXN", "unitText": "night" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 4 people",
+      "description": "Air-conditioned room for 4 people at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2400", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2400", "priceCurrency": "MXN", "unitText": "night" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 5 people",
+      "description": "Air-conditioned room for 5 people at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2600", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2600", "priceCurrency": "MXN", "unitText": "night" } }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Lodging",
+      "name": "Room with A/C for 6 people",
+      "description": "Air-conditioned room for 6 people at Hotel Barlovento, Puerto Escondido.",
+      "provider": { "@type": "Hotel", "name": "Hotel Barlovento" },
+      "areaServed": { "@type": "City", "name": "Puerto Escondido" },
+      "offers": { "@type": "Offer", "price": "2800", "priceCurrency": "MXN", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2800", "priceCurrency": "MXN", "unitText": "night" } }
+    }
+  ]
+  </script>
 </head>
 
 <body>
-  
+
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXWDWJQF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
