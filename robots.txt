@@ -1,0 +1,37 @@
+# robots.txt — Hotel Barlovento
+# www.hotel-barlovento.com
+
+# -------------------------------------------------------
+# General crawlers (Google, Bing, etc.)
+# -------------------------------------------------------
+User-agent: *
+Allow: /
+
+# -------------------------------------------------------
+# AI crawlers — explicitly allowed
+# -------------------------------------------------------
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI training (Bard / Gemini training data)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used to train many open-source LLMs)
+User-agent: CCBot
+Allow: /
+
+# -------------------------------------------------------
+# Sitemap
+# -------------------------------------------------------
+Sitemap: https://www.hotel-barlovento.com/sitemap.xml
